@@ -1,0 +1,111 @@
+/*RESET*/
+
+body {
+  font-size:62.5%;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {  margin:0;
+  padding:0;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+fieldset,img { 
+  border:0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+  font-style:normal;
+  font-weight:normal;
+}
+ol,ul {
+  list-style:none;
+}
+caption,th {
+  text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+q:before,q:after {
+  content:'';
+}
+abbr,acronym { border:0;
+}
+
+* { margin: 0;
+    padding: 0px; }
+
+.clearfix {
+  clear: both;
+}
+
+
+/*END RESET*/
+
+
+
+html { 
+  line-height: normal;
+}
+
+.container {
+  width: 930px;
+  margin: 0 auto;
+}
+
+/*********************INDEX STYLES*********************/
+
+.player-container {
+  width: 930px;
+  height: 358px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.player-item {    
+  width: 293px;
+  height: 275px;
+  background: #777;
+  margin: 0 25px 20px 0;
+  float: left;
+}
+
+.player-item.last {
+  margin-right: 0;
+  float: right;
+}
+
+
+/*********************PLAYER STYLES*********************/
+
+.player-container.thebeatles {
+  background: url('../images/bg_thebeatles.jpg') no-repeat;
+}
+
+
+
+/*********************SPONSORS*********************/
+
+.sponsors {
+  margin-top: 36px;
+}
+
+.sponsors a img {
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-right: 42px;
+}
+
+.sponsors a img.last {
+  margin-right: 0;
+}
