@@ -67,7 +67,7 @@ html {
 
 .player-item {    
   width: 269px;
-  height: 275px;
+  height: 255px;
   margin: 0 28px 20px 0;
   padding: 10px;
   float: left;
@@ -140,11 +140,15 @@ html {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 17px;
+  display: block;
+  background: url('../images/icon_song.png') no-repeat;
+
 }
 
 .player-item ul li.song-artist {
   color: #858b97;
   font-size: 14px;
+  background: url('../images/icon_artist.png') no-repeat;
 }
 
 

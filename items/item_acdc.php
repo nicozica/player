@@ -47,17 +47,18 @@ if (!$fp)
 		$song = trim($split[1]);
 		}
 	}
+
 ?>
 
 
 <div class="player-item-ref thebeatles">
-	<!-- Inicio A TMP -->
-	<img src="assets/images/img_item_acdc.jpg" alt="AC/DC" />
-	<h2>AC/DC</h2>
-	<ul>
-		<li class="song-title"><?php echo $song ?></li>
-		<li class="song-artist"><?php echo $artist ?></li>
-	</ul>
-	<!-- Fin A TMP -->  
+	<a class="" href="#">
+		<img src="assets/images/img_item_acdc.jpg" alt="AC/DC" />
+		<h2>AC/DC</h2>
+		<ul>
+			<li class="song-title"><?php echo $song ?></li>
+			<li class="song-artist"><?php echo $artist ?></li>
+		</ul>
+	</a> 
 </div><!-- /.player-container -->
 
