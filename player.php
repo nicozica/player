@@ -36,37 +36,49 @@ function timedRefresh(timeoutPeriod) {
 
             <!-- /*ROW 1*/ -->
             <div class="player-item">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 2*/ -->
             <div class="player-item">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
+                <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" />
             </div><!-- /.player-item -->
             <div class="player-item last">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 3*/ -->
             <div class="player-item">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 4*/ -->
             <div class="player-item">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
+                <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 

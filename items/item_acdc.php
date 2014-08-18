@@ -15,8 +15,8 @@ Version: v1.1
 
 /* ----------- Server configuration ---------- */
 
-$ip = "server-uk1.radioseninternetuy.com";
-$port = "8012";
+$ip = "usa4-vn.mixstream.net";
+$port = "9436";
 
 /* ----- No need to edit below this line ----- */
 /* ------------------------------------------- */
@@ -50,14 +50,14 @@ if (!$fp)
 ?>
 
 
-<div class="player-container thebeatles">
-	<h1>The Beatles</h1>
-	<div class="player-box">
-		<?php
-			include "muse/the-beatles.php"
-		?> 
-	</div><!-- /.player-box -->
-	<p class="song-title"><?php echo $song ?></p>
-	<p class="song-artist"><?php echo $artist ?></p>   
+<div class="player-item-ref thebeatles">
+	<!-- Inicio A TMP -->
+	<img src="assets/images/img_item_acdc.jpg" alt="AC/DC" />
+	<h2>AC/DC</h2>
+	<ul>
+		<li class="song-title"><?php echo $song ?></li>
+		<li class="song-artist"><?php echo $artist ?></li>
+	</ul>
+	<!-- Fin A TMP -->  
 </div><!-- /.player-container -->
 
