@@ -15,12 +15,19 @@
     <meta name="robots" content="index, follow" />
     <meta name="language" content="es"/>
     <meta name="distribution" content="global" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<script type="text/JavaScript">
+<!--
+function timedRefresh(timeoutPeriod) {
+    setTimeout("location.reload(true);",timeoutPeriod);
+}
+//   -->
+</script>
+<body onLoad="JavaScript:timedRefresh(60000);">
     <div class="container">
         <div class="player-container">
             <?php $url = 'players/'.$player.'.php'; include $url; ?>
