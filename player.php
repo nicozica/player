@@ -20,13 +20,7 @@
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
-<script type="text/JavaScript">
-<!--
-function timedRefresh(timeoutPeriod) {
-    setTimeout("location.reload(true);",timeoutPeriod);
-}
-//   -->
-</script>
+
 <body onLoad="JavaScript:timedRefresh(60000);">
     <div class="container">
         <div class="player-container">
@@ -39,46 +33,46 @@ function timedRefresh(timeoutPeriod) {
                 <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_rollingstones.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_thebeatles.php" ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 2*/ -->
             <div class="player-item">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_classicrock.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
                 <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" />
             </div><!-- /.player-item -->
             <div class="player-item last">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_reggae.php" ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 3*/ -->
             <div class="player-item">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_70s.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_80s.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_90s.php" ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 4*/ -->
             <div class="player-item">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_tophits.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
-                <?php include "items/item_acdc.php" ?>
+                <?php include "items/item_rockdeaca.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
-                <?php include "items/item_acdc.php" ?>
+                <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" />
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
@@ -89,5 +83,6 @@ function timedRefresh(timeoutPeriod) {
     </div><!-- /.container -->
 
 </body>
+
 </html>
 

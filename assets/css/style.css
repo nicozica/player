@@ -41,6 +41,9 @@ abbr,acronym { border:0;
   clear: both;
 }
 
+a {
+  text-decoration: none;
+}
 
 /*END RESET*/
 
@@ -84,6 +87,22 @@ html {
 
 
 /*********************PLAYER STYLES*********************/
+/*ARREGLAR*/
+a.player-link {
+  display: block;
+}
+
+.player-thumb {
+  display: block;
+  background: url('../images/icon_play.png') no-repeat center center;
+  margin-bottom: 16px;
+  -webkit-box-shadow: 3px 3px 0px rgba(0,0,0,.2); 
+  -moz-box-shadow: 3px 3px 0px rgba(0,0,0,.2); 
+  box-shadow: 0px 0px 0px rgba(0,0,0,.2); 
+
+}
+
+/*ARREGLAR*/
 
 .player-container h1 {
   text-align: center;
@@ -150,6 +169,95 @@ html {
   font-size: 14px;
   background: url('../images/icon_artist.png') no-repeat;
 }
+
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #e7e8ea;
+  display: block;
+  margin: 15px 0 10px 0;
+}
+
+
+/******ICON PLAYERS******/
+
+.icon-players p {
+  color: #c4cbd7;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 10px;
+  display: inline;
+  float: left;
+  padding-top: 3px;
+}
+
+.icon-players ul {
+  float: right;
+  display: inline;
+  width: 144px;
+  margin-top: 0px;
+}
+
+.icon-players ul li a {
+  text-indent: -9999px;
+  display: inline;
+  width: 30px;
+  height: 30px;
+  float: left;
+  opacity: 0.3;
+-webkit-transition-property: opacity;
+   -moz-transition-property: opacity;
+     -o-transition-property: opacity;
+    -ms-transition-property: opacity;
+        transition-property: opacity;
+-webkit-transition-duration: 0.3s;
+   -moz-transition-duration: 0.3s;
+     -o-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+}
+
+.icon-players ul li a.wmp {
+  background: url('../images/icon_wmp.png') no-repeat;
+  margin-right: 8px;
+}
+
+.icon-players ul li a:hover.wmp {
+  background-position: 0 -30px;
+  opacity: 1;
+}
+
+.icon-players ul li a.winamp {
+  background: url('../images/icon_winamp.png') no-repeat;
+  margin-right: 8px;
+}
+
+.icon-players ul li a:hover.winamp {
+  background-position: 0 -30px;
+  opacity: 1;
+}
+
+.icon-players ul li a.itunes {
+  background: url('../images/icon_itunes.png') no-repeat;
+  margin-right: 8px;
+}
+
+.icon-players ul li a:hover.itunes {
+  background-position: 0 -30px;
+  opacity: 1;
+}
+
+.icon-players ul li a.realplayer {
+  background: url('../images/icon_realplayer.png') no-repeat;
+}
+
+.icon-players ul li a:hover.realplayer {
+  background-position: 0 -30px;
+  opacity: 1;
+}
+
 
 
 /*********************SPONSORS*********************/
