@@ -1,33 +1,3 @@
-
-<script type="text/JavaScript">
-<!--
-function timedRefresh(timeoutPeriod) {
-    setTimeout("location.reload(true);",timeoutPeriod);
-}
-//   -->
-</script>
-
-<div class="player-item-ref thebeatles">
-	<a class="player-link" href="#">
-		<img class="player-thumb" src="assets/images/img_item_acdc.jpg" alt="AC/DC" />
-		<h2>AC/DC</h2>
-		<ul>
-			<li class="song-title"><?php echo $song ?></li>
-			<li class="song-artist"><?php echo $artist ?></li>
-		</ul>
-	</a>
-	<div class="divider"></div>
-	<div class="icon-players">
-		<p>Escuchar en tu<br>reproductor</p>
-		<ul>
-			<li><a class="wmp" href="#">Windows Media Player</a></li>
-			<li><a class="winamp" href="#">Winamp</a></li>
-			<li><a class="itunes" href="#">iTunes</a></li>
-			<li><a class="realplayer" href="#">Real Player</a></li>
-		</li>
-	</div>
-</div><!-- /.player-container -->
-
 <?php
 
 /*
@@ -88,10 +58,31 @@ if (!$fp)
 	}
 
 
-
-
-
 ?>
+<div class="player-item-ref thebeatles">
+	<a class="player-link" href="#">
+		<div class="player-thumb">
+			<img src="assets/images/img_item_acdc.jpg" alt="AC/DC" />
+		</div>
+		<h2>AC/DC</h2>
+		<ul>
+			<li class="song-title"><?php echo $song ?></li>
+			<li class="song-artist"><?php echo $artist ?></li>
+		</ul>
+	</a>
+	<div class="divider"></div>
+	<div class="icon-players">
+		<p>Escuchar en tu<br>reproductor</p>
+		<ul>
+			<li><a class="wmp" href="#">Windows Media Player</a></li>
+			<li><a class="winamp" href="#">Winamp</a></li>
+			<li><a class="itunes" href="#">iTunes</a></li>
+			<li><a class="realplayer" href="#">Real Player</a></li>
+		</li>
+	</div>
+</div><!-- /.player-container -->
+
+
 
 
 

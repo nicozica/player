@@ -57,7 +57,7 @@ if (!$fp)
 			include "muse/the-beatles.php"
 		?> 
 	</div><!-- /.player-box -->
-	<p class="song-title"><?php echo $song ?></p>
-	<p class="song-artist"><?php echo $artist ?></p>   
+	<p class="song-title" id="title-thebeatles"><?php echo $song ?></p>
+	<p class="song-artist" id="artist-thebeatles"><?php echo $artist ?></p>   
 </div><!-- /.player-container -->
 

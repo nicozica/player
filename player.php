@@ -19,9 +19,18 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+    var to_refresh = ['title-thebeatles', 'artist-thebeatles', 'id3'];
+
+    var auto_refresh = setInterval(function () {
+    $.each(to_refresh, function(_,id) {
+        $('#'+id).load('player.php #'+id).fadeIn("slow");
+    });
+    }, 5000);
+    </script>
 </head>
 
-<body onLoad="JavaScript:timedRefresh(60000);">
+<body>
     <div class="container">
         <div class="player-container">
             <?php $url = 'players/'.$player.'.php'; include $url; ?>
