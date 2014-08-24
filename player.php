@@ -19,15 +19,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-    <script type="text/javascript">
-    var to_refresh = ['title-thebeatles', 'artist-thebeatles', 'id3'];
-
-    var auto_refresh = setInterval(function () {
-    $.each(to_refresh, function(_,id) {
-        $('#'+id).load('player.php #'+id).fadeIn("slow");
-    });
-    }, 5000);
-    </script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
 </head>
 
 <body>
@@ -38,7 +31,7 @@
         <div class="player-item-section">
 
             <!-- /*ROW 1*/ -->
-            <div class="player-item">
+            <div class="player-item" id="acdc">
                 <?php include "items/item_acdc.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item">
@@ -81,7 +74,7 @@
                 <?php include "items/item_rockdeaca.php" ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
-                <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" />
+                <img src="assets/images/rotator/rotate.php" alt="Banner" width="271" height="255" />
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 

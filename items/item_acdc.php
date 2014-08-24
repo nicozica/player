@@ -47,18 +47,18 @@ if (!$fp)
 		$artist = trim($split[0]);
 		$song = trim($split[1]);
 		}
+
+
 	}
 
-	if(strlen($song) > 35) {
-		$short = substr($song,0,35) . " ...";
-	}
-
-	if(strlen($artist) > 38) {
-		$short = substr($artist,0,38) . " ...";
-	}
-
+function truncate($string, $length, $dots = "...") {
+    return (strlen($string) > $length) ? substr($string, 0, $length - strlen($dots)) . $dots : $string;
+}
 
 ?>
+
+
+
 <div class="player-item-ref thebeatles">
 	<a class="player-link" href="#">
 		<div class="player-thumb">
@@ -66,8 +66,8 @@ if (!$fp)
 		</div>
 		<h2>AC/DC</h2>
 		<ul>
-			<li class="song-title"><?php echo $song ?></li>
-			<li class="song-artist"><?php echo $artist ?></li>
+			<li class="song-title"><?php echo truncate("$song", 35); ?></li>
+			<li class="song-artist"><?php echo truncate("$artist", 38); ?></li>
 		</ul>
 	</a>
 	<div class="divider"></div>
