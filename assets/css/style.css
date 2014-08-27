@@ -183,7 +183,16 @@ a.player-link {
   height: 1px;
   background: #e7e8ea;
   display: block;
-  margin: 15px 0 10px 0;
+  margin: 20px 0 10px 0;
+}
+
+.player-item ul .alert {
+  margin: 5px 0 5px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color: #d70926;
+  display: block;
 }
 
 

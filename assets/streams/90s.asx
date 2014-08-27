@@ -1,0 +1,27 @@
+<ASX version = "3.0">
+  <TITLE>90s Hits by Radio UNO Digital</TITLE>
+  <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+  <COPYRIGHT>The Beatles</COPYRIGHT>
+  <ABSTRACT>powered by www.radioseninternetuy.com</ABSTRACT>
+<ENTRY> 
+      <TITLE>90s Hits by Radio UNO Digital</TITLE>
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:10030”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+<ENTRY>
+<TITLE>90s Hits by Radio UNO Digital</TITLE>
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:10030”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>
+</ENTRY>
+<ENTRY>  
+      <TITLE>90s Hits by Radio UNO Digital</TITLE>
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:10030”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+</ASX>

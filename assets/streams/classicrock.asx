@@ -1,0 +1,27 @@
+<ASX version = "3.0">
+  <TITLE>Classic Rock Radio - Radios en Internet</TITLE>
+  <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+  <COPYRIGHT>(c)radioseninternetuy.com</COPYRIGHT>
+  <ABSTRACT>www.radioseninternetuy.com</ABSTRACT>
+<ENTRY> 
+      <TITLE>Classic Rock Radio - Radios en Internet</TITLE>
+      <PARAM name="HTMLView" value="http://www.radioseninternetuy.com/canalrock/index.html"/>
+      <REF HREF= "http:/server-uk4.radioseninternetuy.com:9972"/>
+      <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+      <Abstract>www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+<ENTRY>
+<TITLE>Classic Rock Radio - Radios en Internet</TITLE> 
+      <PARAM name="HTMLView" value="http://www.radioseninternetuy.com/canalrock/index.html"/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:9972"/>
+      <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+      <Abstract>www.radioseninternetuy.com</ABSTRACT>
+</ENTRY>
+<ENTRY>  
+      <TITLE>Classic Rock Radio - Radios en Internet</TITLE> 
+      <PARAM name="HTMLView" value="http://www.radioseninternetuy.com/canalrock/index.html"/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:9972"/>
+      <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+      <Abstract>www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+</ASX>

@@ -1,0 +1,27 @@
+<ASX version = "3.0">
+  <TITLE>The Beatles 24 hours a day</TITLE>
+  <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+  <COPYRIGHT>The Beatles</COPYRIGHT>
+  <ABSTRACT>powered by www.radioseninternetuy.com</ABSTRACT>
+<ENTRY> 
+      <TITLE>The Beatles 24 hours a day</TITLE>
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk1.radioseninternetuy.com:8012”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+<ENTRY>
+<TITLE>The Beatles 24 hours a day</TITLE> 
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk1.radioseninternetuy.com:8012”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>
+</ENTRY>
+<ENTRY>  
+      <TITLE>The Beatles 24 hours a day</TITLE> 
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk1.radioseninternetuy.com:8012”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+</ASX>
