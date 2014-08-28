@@ -26,6 +26,7 @@
     $.ajaxSetup({ cache: false }); // This part addresses an IE bug. without it, IE will only load the first number and will never refresh
     setInterval(function() {
 
+    //LOAD RDS ITEMS
     $('#acdc').load('items/item_acdc.php');
     $('#rollingstones').load('items/item_rollingstones.php');
     $('#thebeatles').load('items/item_thebeatles.php');
@@ -40,7 +41,23 @@
     $('#tophits').load('items/item_tophits.php');
     $('#rockdeaca').load('items/item_rockdeaca.php');
 
-    }, 9000); // the "9000" here refers to the time to refresh the div. it is in milliseconds.
+
+    //LOAD RDS PLAYERS
+    $('#rds_acdc').load('players/rds/rds_acdc.php');
+    $('#rds_rollingstones').load('players/rds/rds_rollingstones.php');
+    $('#rds_thebeatles').load('players/rds/rds_thebeatles.php');
+
+    $('#rds_classicrock').load('players/rds/rds_classicrock.php');
+    $('#rds_reggae').load('players/rds/rds_reggae.php');
+
+    $('#rds_70s').load('players/rds/rds_70s.php');
+    $('#rds_80s').load('players/rds/rds_80s.php');
+    $('#rds_90s').load('players/rds/rds_90s.php');
+
+    $('#rds_tophits').load('players/rds/rds_tophits.php');
+    $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
+
+    }, 3000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
 
     });
     // ]]></script>
@@ -70,7 +87,8 @@
               
             </div><!-- /.player-item -->
             <div class="player-item">
-                <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" />
+                <img src="assets/images/rotator/rotate-tmp.php" alt="Banner" width="271" height="255" />
+                <!-- <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" /> -->
             </div><!-- /.player-item -->
             <div class="player-item last" id="reggae">
                
