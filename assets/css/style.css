@@ -137,6 +137,10 @@ a.player-link {
   margin-top: 12px;
 }
 
+.player-container.radiouno .icon-players ul li a {
+  opacity: 0.6;
+}
+
 
 
 /*********************PLAYER CONTAINER*********************/

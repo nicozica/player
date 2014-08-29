@@ -1,5 +1,5 @@
 <div class="player-item-ref">
-	<a class="player-link" href="player.php?player=player_rollingstones">
+	<a class="player-link" onclick="load('player_rollingstones');return false;" href="">
 		<div class="player-thumb">
 			<img src="assets/images/img_item_rollingstones.jpg" alt="Rolling Stones" />
 		</div>

@@ -21,7 +21,13 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     
-    <script type="text/javascript">// <![CDATA[
+    <script type="text/javascript">
+
+    function load(page){
+       $("#load-target").load('players/'+page+'.php');
+    }
+
+    // <![CDATA[
     $(document).ready(function() {
     $.ajaxSetup({ cache: false }); // This part addresses an IE bug. without it, IE will only load the first number and will never refresh
     setInterval(function() {
@@ -67,7 +73,7 @@
 
 <body>
     <div class="container">
-        <div class="player-container">
+        <div class="player-container" id="load-target">
             <?php $url = 'players/'.$player.'.php'; include $url; ?>
         </div><!-- /.player-container -->
         <div class="player-item-section" id="items">
@@ -89,7 +95,7 @@
               
             </div><!-- /.player-item -->
             <div class="player-item">
-                <img src="assets/images/rotator/rotate-tmp.php" alt="Banner" width="271" height="255" />
+                <img src="assets/images/rotator-tmp/rotate-tmp.php" alt="Banner" width="271" height="255" />
                 <!-- <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" /> -->
             </div><!-- /.player-item -->
             <div class="player-item last" id="reggae">
