@@ -1,0 +1,27 @@
+<ASX version = "3.0">
+  <TITLE>24 horas de Rolling Stones - Portal de Radios</TITLE>
+  <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+  <COPYRIGHT>(c)portalderadios.com.uy</COPYRIGHT>
+  <ABSTRACT>www.portalderadios.com.uy</ABSTRACT>
+<ENTRY> 
+      <TITLE>24 horas de Rolling Stones - Portal de Radios</TITLE>
+      <PARAM name="HTMLView" value="http://www.radioseninternetuy.com/rollinga/index.html"/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:9528"/>
+      <AUTHOR>portalderadios.com.uy</AUTHOR>
+      <Abstract>portalderadios.com.uy</ABSTRACT>       
+</ENTRY>
+<ENTRY>
+<TITLE>24 horas de Rolling Stones - Portal de Radios</TITLE> 
+      <PARAM name="HTMLView" value="http://www.radioseninternetuy.com/rollinga/index.html"/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:9528"/>
+      <AUTHOR>www.portalderadios.com.uy</AUTHOR>
+      <Abstract>www.portalderadios.com.uy</ABSTRACT>
+</ENTRY>
+<ENTRY>  
+      <TITLE>24 horas de Rolling Stones - Portal de Radios</TITLE> 
+      <PARAM name="HTMLView" value="http://www.radioseninternetuy.com/rollinga/index.html"/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:9528"/>
+      <AUTHOR>www.portalderadios.com.uy</AUTHOR>
+      <Abstract>www.portalderadios.com.uy</ABSTRACT>       
+</ENTRY>
+</ASX>

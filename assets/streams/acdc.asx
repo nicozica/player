@@ -1,0 +1,27 @@
+<ASX version = "3.0">
+  <TITLE>AC/DC - Let there be rock 24 hours a day</TITLE>
+  <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+  <COPYRIGHT>(c)radioseninternetuy.com</COPYRIGHT>
+  <ABSTRACT>www.radioseninternetuy.com</ABSTRACT>
+<ENTRY> 
+      <TITLE>AC/DC - Let there be rock 24 hours a day</TITLE>
+      <PARAM name="HTMLView" value="http://www.radiodelsuronline.com/web/acdc/index2.html"/>
+      <REF HREF= "http://server-uk1.radioseninternetuy.com:8006"/>
+      <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+      <Abstract>www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+<ENTRY>
+<TITLE>AC/DC - Let there be rock 24 hours a day</TITLE> 
+      <PARAM name="HTMLView" value="http://www.radiodelsuronline.com/web/acdc/index2.html"/>
+      <REF HREF= "http://server-uk1.radioseninternetuy.com:8006"/>
+      <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+      <Abstract>www.radioseninternetuy.com</ABSTRACT>
+</ENTRY>
+<ENTRY>  
+      <TITLE>AC/DC - Let there be rock 24 hours a day</TITLE> 
+      <PARAM name="HTMLView" value="http://www.radiodelsuronline.com/web/acdc/index2.html"/>
+      <REF HREF= "http://server-uk1.radioseninternetuy.com:8006"/>
+      <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+      <Abstract>www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+</ASX>
