@@ -75,7 +75,7 @@
 			<li><a class="winamp" href="assets/streams/reggae.pls">Winamp</a></li>
 			<li><a class="itunes" href="assets/streams/reggae.pls">iTunes</a></li>
 			<li><a class="realplayer" href="assets/streams/reggae.ram">Real Player</a></li>
-		</li>
+		</ul>
 	</div>
 </div><!-- /.player-container -->
 

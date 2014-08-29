@@ -110,6 +110,35 @@ a.player-link {
   opacity: 0.35;
 }
 
+/*********************PLAYER CONTAINER RADIOUNO*********************/
+
+.player-container.radiouno .player-box {
+  width: 335px;
+  height: 99px;
+  padding-top: 54px;
+}
+
+.player-container.radiouno .icon-players {
+  width: 334px;
+  height: 42px;
+  margin: 39px auto 25px auto;
+  padding: 0 13px;
+  background: url('../images/border-player-radiouno.png') bottom repeat-x;
+}
+
+.player-container.radiouno .icon-players p {
+  padding-top: 7px;
+  font-size: 12px;
+  color:#d8b3b3;
+  text-shadow: 1px 1px 2px rgba(24, 24, 24, 0.7);
+}
+
+.player-container.radiouno p.song-title {
+  margin-top: 12px;
+}
+
+
+
 /*********************PLAYER CONTAINER*********************/
 
 .player-container .btn_play-radiouno a {
@@ -160,7 +189,7 @@ a.player-link {
 
 .player-container p.song-artist {
   margin-top: 8px;
-  color: #fffae4;
+  color: #f2dc86;
   text-transform: uppercase;
   font-size: 14px;
   text-shadow: 1px 1px 2px rgba(24, 24, 24, 0.7);

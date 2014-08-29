@@ -75,7 +75,7 @@
 			<li><a class="winamp" href="assets/streams/classicrock.pls">Winamp</a></li>
 			<li><a class="itunes" href="assets/streams/classicrock.pls">iTunes</a></li>
 			<li><a class="realplayer" href="assets/streams/classicrock.ram">Real Player</a></li>
-		</li>
+		</ul>
 	</div>
 </div><!-- /.player-container -->
 

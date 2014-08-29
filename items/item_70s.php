@@ -75,7 +75,7 @@
 			<li><a class="winamp" href="assets/streams/70s.pls">Winamp</a></li>
 			<li><a class="itunes" href="assets/streams/70s.pls">iTunes</a></li>
 			<li><a class="realplayer" href="assets/streams/70s.ram">Real Player</a></li>
-		</li>
+		</ul>
 	</div>
 </div><!-- /.player-container -->
 

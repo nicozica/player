@@ -43,6 +43,8 @@
 
 
     //LOAD RDS PLAYERS
+    $('#rds_radiouno').load('players/rds/rds_radiouno.php');
+
     $('#rds_acdc').load('players/rds/rds_acdc.php');
     $('#rds_rollingstones').load('players/rds/rds_rollingstones.php');
     $('#rds_thebeatles').load('players/rds/rds_thebeatles.php');

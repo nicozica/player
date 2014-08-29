@@ -75,7 +75,7 @@
 			<li><a class="winamp" href="assets/streams/acdc.pls">Winamp</a></li>
 			<li><a class="itunes" href="assets/streams/acdc.pls">iTunes</a></li>
 			<li><a class="realplayer" href="assets/streams/acdc.ram">Real Player</a></li>
-		</li>
+		</ul>
 	</div>
 </div><!-- /.player-container -->
 

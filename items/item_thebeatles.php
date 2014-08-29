@@ -75,7 +75,7 @@
 			<li><a class="winamp" href="assets/streams/thebeatles.pls">Winamp</a></li>
 			<li><a class="itunes" href="assets/streams/thebeatles.pls">iTunes</a></li>
 			<li><a class="realplayer" href="assets/streams/thebeatles.ram">Real Player</a></li>
-		</li>
+		</ul>
 	</div>
 </div><!-- /.player-container -->
 

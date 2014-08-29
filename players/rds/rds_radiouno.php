@@ -17,7 +17,7 @@ Version: v1.1
 /* ----------- Server configuration ---------- */
 
 $ip = "server-uk1.radioseninternetuy.com";
-$port = "8012";
+$port = "8010";
 
 /* ----- No need to edit below this line ----- */
 /* ------------------------------------------- */
