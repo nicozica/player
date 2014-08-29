@@ -1,5 +1,6 @@
 <p class="song-title">
 <?php
+header('Content-Type: text/html; charset=ISO-8859-1');
 /*
 
 Now Playing PHP script for SHOUTcast
