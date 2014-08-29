@@ -19,12 +19,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="http://radiounodigital.com.uy/home/wp-content/uploads/2012/10/favicon.ico" type="image/x-icon" /> 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     
     <script type="text/javascript">
 
-    function load(page){
-       $("#load-target").load('players/'+page+'.php');
+    function load(player){
+       $("#load-player").load('players/'+player+'.php');
     }
 
     // <![CDATA[
@@ -33,19 +34,19 @@
     setInterval(function() {
 
     //LOAD RDS ITEMS
-    $('#acdc').load('items/item_acdc.php');
-    $('#rollingstones').load('items/item_rollingstones.php');
-    $('#thebeatles').load('items/item_thebeatles.php');
+    $('#rds_item_acdc').load('items/rds/rds_item_acdc.php');
+    $('#rds_item_rollingstones').load('items/rds/rds_item_rollingstones.php');
+    $('#rds_item_thebeatles').load('items/rds/rds_item_thebeatles.php');
 
-    $('#classicrock').load('items/item_classicrock.php');
-    $('#reggae').load('items/item_reggae.php');
+    $('#rds_item_classicrock').load('items/rds/rds_item_classicrock.php');
+    $('#rds_item_reggae').load('items/rds/rds_item_reggae.php');
 
-    $('#70s').load('items/item_70s.php');
-    $('#80s').load('items/item_80s.php');
-    $('#90s').load('items/item_90s.php');
+    $('#rds_item_70s').load('items/rds/rds_item_70s.php');
+    $('#rds_item_80s').load('items/rds/rds_item_80s.php');
+    $('#rds_item_90s').load('items/rds/rds_item_90s.php');
 
-    $('#tophits').load('items/item_tophits.php');
-    $('#rockdeaca').load('items/item_rockdeaca.php');
+    $('#rds_item_tophits').load('items/rds/rds_item_tophits.php');
+    $('#rds_item_rockdeaca').load('items/rds/rds_item_rockdeaca.php');
 
 
     //LOAD RDS PLAYERS
@@ -65,7 +66,7 @@
     $('#rds_tophits').load('players/rds/rds_tophits.php');
     $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
 
-    }, 3000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
+    }, 1000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
 
     });
     // ]]></script>
@@ -73,54 +74,54 @@
 
 <body>
     <div class="container">
-        <div class="player-container" id="load-target">
+        <div class="player-container" id="load-player">
             <?php $url = 'players/'.$player.'.php'; include $url; ?>
         </div><!-- /.player-container -->
         <div class="player-item-section" id="items">
 
             <!-- /*ROW 1*/ -->
-            <div class="player-item" id="acdc">
-                
+            <div class="player-item">
+                <?php include 'items/item_acdc.php' ?>
             </div><!-- /.player-item -->
-            <div class="player-item" id="rollingstones">
-                
+            <div class="player-item">
+                <?php include 'items/item_rollingstones.php' ?>
             </div><!-- /.player-item -->
-            <div class="player-item last" id="thebeatles">
-              
+            <div class="player-item last">
+                <?php include 'items/item_thebeatles.php' ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 2*/ -->
-            <div class="player-item" id="classicrock">
-              
+            <div class="player-item">
+                <?php include 'items/item_classicrock.php' ?>
             </div><!-- /.player-item -->
             <div class="player-item">
                 <img src="assets/images/rotator-tmp/rotate-tmp.php" alt="Banner" width="271" height="255" />
                 <!-- <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" /> -->
             </div><!-- /.player-item -->
-            <div class="player-item last" id="reggae">
-               
+            <div class="player-item last">
+                <?php include 'items/item_reggae.php' ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 3*/ -->
-            <div class="player-item" id="70s">
-               
+            <div class="player-item">
+                <?php include 'items/item_70s.php' ?>
             </div><!-- /.player-item -->
-            <div class="player-item" id="80s">
-               
+            <div class="player-item">
+                <?php include 'items/item_80s.php' ?>
             </div><!-- /.player-item -->
-            <div class="player-item last" id="90s">
-               
+            <div class="player-item last">
+                <?php include 'items/item_90s.php' ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
             <!-- /*ROW 4*/ -->
-            <div class="player-item" id="tophits">
-             
+            <div class="player-item">
+                <?php include 'items/item_tophits.php' ?>
             </div><!-- /.player-item -->
-            <div class="player-item" id="rockdeaca">
-            
+            <div class="player-item">
+                <?php include 'items/item_rockdeaca.php' ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
                 <img src="assets/images/rotator/rotate.php" alt="Banner" width="271" height="255" />

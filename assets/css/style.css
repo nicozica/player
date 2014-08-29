@@ -134,7 +134,7 @@ a.player-link {
 }
 
 .player-container.radiouno p.song-title {
-  margin-top: 12px;
+  margin-top: -8px;
 }
 
 .player-container.radiouno .icon-players ul li a {
