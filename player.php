@@ -66,7 +66,7 @@
     $('#rds_tophits').load('players/rds/rds_tophits.php');
     $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
 
-    }, 1000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
+    }, 15000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
 
     });
     // ]]></script>
