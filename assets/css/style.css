@@ -215,6 +215,18 @@ a.player-link {
   background: url('../images/bg_thebeatles.jpg') no-repeat;
 }
 
+.player-container.u2 {
+  background: url('../images/bg_u2.jpg') no-repeat;
+}
+
+.player-container.queen {
+  background: url('../images/bg_queen.jpg') no-repeat;
+}
+
+.player-container.redondos {
+  background: url('../images/bg_redondos.jpg') no-repeat;
+}
+
 .player-container.classicrock {
   background: url('../images/bg_classicrock.jpg') no-repeat;
 }
