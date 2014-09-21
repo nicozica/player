@@ -74,7 +74,7 @@
     $('#rds_tophits').load('players/rds/rds_tophits.php');
     $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
 
-    }, 1000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
+    }, 30000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
 
     });
     // ]]></script>
@@ -101,11 +101,12 @@
 
             <!-- /*ROW 2 NEW*/ -->
             <div class="player-item">
-                <?php include 'items/item_u2.php' ?>
+                <img src="assets/images/rotator-tmp/rotate-tmp.php" alt="Banner" width="271" height="255" />
+                <!-- <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" /> -->
             </div><!-- /.player-item -->
             <div class="player-item">
-                <?php include 'items/item_queen.php' ?>
-            </div><!-- /.player-item -->
+                <?php include 'items/item_u2.php' ?>
+            </div><!-- /.player-item -->     
             <div class="player-item last">
                 <?php include 'items/item_redondos.php' ?>
             </div><!-- /.player-item-last -->
@@ -113,11 +114,10 @@
 
             <!-- /*ROW 2*/ -->
             <div class="player-item">
-                <?php include 'items/item_classicrock.php' ?>
+                <?php include 'items/item_queen.php' ?>
             </div><!-- /.player-item -->
             <div class="player-item">
-                <img src="assets/images/rotator-tmp/rotate-tmp.php" alt="Banner" width="271" height="255" />
-                <!-- <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" /> -->
+                <?php include 'items/item_classicrock.php' ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
                 <?php include 'items/item_reggae.php' ?>
