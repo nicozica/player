@@ -1,0 +1,27 @@
+<ASX version = "3.0">
+  <TITLE>Patricio Rey y Sus Redonditos de Ricota by Radio UNO Digital</TITLE>
+  <AUTHOR>www.radioseninternetuy.com</AUTHOR>
+  <COPYRIGHT>Patricio Rey y Sus Redonditos de Ricota</COPYRIGHT>
+  <ABSTRACT>powered by www.radioseninternetuy.com</ABSTRACT>
+<ENTRY> 
+      <TITLE>Patricio Rey y Sus Redonditos de Ricota by Radio UNO Digital</TITLE>
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:10028”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+<ENTRY>
+<TITLE>Patricio Rey y Sus Redonditos de Ricota by Radio UNO Digital</TITLE>
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:10028”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>
+</ENTRY>
+<ENTRY>  
+      <TITLE>Patricio Rey y Sus Redonditos de Ricota by Radio UNO Digital</TITLE>
+      <PARAM name="HTMLView" value="http://www.radiounodigital.com”/>
+      <REF HREF= "http://server-uk4.radioseninternetuy.com:10028”/>
+      <AUTHOR>powered by www.radioseninternetuy.com</AUTHOR>
+      <Abstract>powered by www.radioseninternetuy.com</ABSTRACT>       
+</ENTRY>
+</ASX>

@@ -38,6 +38,10 @@
     $('#rds_item_rollingstones').load('items/rds/rds_item_rollingstones.php');
     $('#rds_item_thebeatles').load('items/rds/rds_item_thebeatles.php');
 
+    $('#rds_item_u2').load('items/rds/rds_item_u2.php');
+    $('#rds_item_queen').load('items/rds/rds_item_queen.php');
+    $('#rds_item_redondos').load('items/rds/rds_item_redondos.php');
+
     $('#rds_item_classicrock').load('items/rds/rds_item_classicrock.php');
     $('#rds_item_reggae').load('items/rds/rds_item_reggae.php');
 
@@ -55,6 +59,10 @@
     $('#rds_acdc').load('players/rds/rds_acdc.php');
     $('#rds_rollingstones').load('players/rds/rds_rollingstones.php');
     $('#rds_thebeatles').load('players/rds/rds_thebeatles.php');
+
+    $('#rds_u2').load('players/rds/rds_u2.php');
+    $('#rds_queen').load('players/rds/rds_queen.php');
+    $('#rds_redondos').load('players/rds/rds_redondos.php');
 
     $('#rds_classicrock').load('players/rds/rds_classicrock.php');
     $('#rds_reggae').load('players/rds/rds_reggae.php');
@@ -88,6 +96,18 @@
             </div><!-- /.player-item -->
             <div class="player-item last">
                 <?php include 'items/item_thebeatles.php' ?>
+            </div><!-- /.player-item-last -->
+            <div class="clearfix"></div>
+
+            <!-- /*ROW 2 NEW*/ -->
+            <div class="player-item">
+                <?php include 'items/item_u2.php' ?>
+            </div><!-- /.player-item -->
+            <div class="player-item">
+                <?php include 'items/item_queen.php' ?>
+            </div><!-- /.player-item -->
+            <div class="player-item last">
+                <?php include 'items/item_redondos.php' ?>
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
