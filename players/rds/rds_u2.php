@@ -17,7 +17,7 @@ Version: v1.1
 /* ----------- Server configuration ---------- */
 
 $ip = "usa4-vn.mixstream.net";
-$port = "9436";
+$port = "9974";
 
 /* ----- No need to edit below this line ----- */
 /* ------------------------------------------- */
