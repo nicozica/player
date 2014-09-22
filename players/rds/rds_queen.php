@@ -16,8 +16,8 @@ Version: v1.1
 
 /* ----------- Server configuration ---------- */
 
-$ip = "usa4-vn.mixstream.net";
-$port = "9436";
+$ip = "server-uk4.radioseninternetuy.com";
+$port = "10022";
 
 /* ----- No need to edit below this line ----- */
 /* ------------------------------------------- */
