@@ -113,13 +113,26 @@ a.player-link {
 /*********************PLAYER CONTAINER RADIOUNO*********************/
 
 .player-container.radiouno .player-box {
-  width: 335px;
+  width: 525px;
   height: 99px;
-  padding-top: 54px;
+  padding-top: 56px;
+}
+
+.player-container.radiouno .player-box .muse-player {
+  width: 333px;
+  height: 99px;
+  float: left;
+}
+
+.player-container.radiouno .player-box .banner_onair {
+  width: 190px;
+  height: 99px;
+  padding-top: 11px; 
+  float: right;
 }
 
 .player-container.radiouno .icon-players {
-  width: 334px;
+  width: 538px;
   height: 42px;
   margin: 39px auto 25px auto;
   padding: 0 13px;

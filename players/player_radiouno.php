@@ -1,8 +1,13 @@
 <div class="player-container radiouno">
 	<div class="player-box">
-		<?php
-			include "muse/muse_radiouno.php";
-		?> 
+		<div class="muse-player">
+			<?php
+				include "muse/muse_radiouno.php";
+			?>
+		</div>
+		<div class="banner_onair">
+			<img src="assets/images/ban_rollingstones.jpg" />
+		</div>
 	</div><!-- /.player-box -->
 	<div class="icon-players">
 		<p>Reproductores</p>
