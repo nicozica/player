@@ -116,7 +116,91 @@ $port[26] = "9528";
 /* ------------------------------------------- */
 $servers = count($ip);
 ?>
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<?php
+if ($refresh != "0") 
+	{
+	print "<meta http-equiv=\"refresh\" content=\"$refresh\">\n";
+	}
+print "<title>$station_name SHOUTcast Stats</title>\n";
+?>
+<style type="text/css">
+<!--
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	margin: 5px;
+}
+div {
+	background-color: #fef9f2;
+	border: 1px solid #000;
+	padding: 4px;
+	margin-bottom: 5px;
+	width: 400px;
+}
+div div {
+	margin: 5px;
+	border: 0;
+	background-color: #fef9f2;
+	margin: 5px;
+	margin-bottom: 0;
+}
+h1 {
+	font-size: 22px;
+	color: #000;
+	margin: 2px;
+}
+h2 {
+	font-size: 14px;
+	color: #336666;
+	margin: 2px;
+}
+p {
+	margin: 5px;
+}
+a {
+	color: #666699;
+	text-decoration: none;
+}
+a:hover {
+	color: #00F;
+}
+div.line {
+	border-bottom: 1px dashed #000;
+	height: 3px;
+	font-size: 1px;
+	margin-top: 0;
+}
+div#blu, div#blu div {
+	background-color: #b2bfc0;
+}
+.red {
+	color: #CC0000;
+	font-weight: bold;
+}
+.small {
+	font-size: 10px;
+}
+body,td,th {
+	color: #F00;
+}
+a:link {
+	color: #00F;
+}
+a:visited {
+	color: #00F;
+}
+a:active {
+	color: #00F;
+}
+-->
+</style>
+</head>
+<body>
 <?php
 $i = "1";
 while($i<=$servers)
@@ -176,5 +260,66 @@ while($i<=$servers)
 	$i++;
 	}
 $total_listeners = array_sum($listeners) ;
-
+print "<div id=\"blu\">\n  <div style=\"text-align: center;\">\n    <h1>Ahora hay $total_listeners oyentes online</h1>\n  </div>\n</div>\n<div>\n  <div>\n    <p><b>Ahora suena:</b> $song[1]</p>\n  </div>\n</div>\n<div>\n";
+$i = "1";
+while($i<=$servers)
+	{
+  	  print "  <div>\n";
+if ($max[$i] > 0) 
+	{
+	$percentage = round(($listeners[$i] / $max[$i] * 100));
+	$timesby = (300 / $max[$i]);
+	$barlength = round(($listeners[$i] * "$timesby"));
+	}
+if ($error[$i] != "1") 
+	{
 ?>
+    <table width="400"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="25%" align="center"><b><a href="http://<?php print $ip[$i] . ":" . $port[$i]; ?>" target="_blank">Server <?php print $i ?></a></b>&nbsp;&nbsp;</td>
+        <td width="75%" colspan="3" bgcolor="#eeeeee"><img src="<?php if ($percentage == "100") { print "red-"; } ?>bar.gif" width="<?php print $barlength ?>" height="12" alt="The server is at <?php print $percentage; ?>% capacity"></td>
+      </tr>
+      <tr>
+        <td width="25%">&nbsp;</td>
+        <td width="25%">0%</td>
+        <td width="25%" align="center">50%</td>
+        <td width="25%" align="right">100%</td>
+      </tr>
+    </table>
+<?php
+	}
+else
+	{
+?>
+    <table width="400"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="25%" align="center"><b><a href="http://<?php print $ip[$i] . ":" . $port[$i]; ?>" target="_blank">Server <?php print $i ?></a></b>&nbsp;&nbsp;</td>
+        <td width="75%" colspan="3" bgcolor="#eeeeee">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="25%">&nbsp;</td>
+        <td width="25%">0%</td>
+        <td width="25%" align="center">50%</td>
+        <td width="25%" align="right">100%</td>
+      </tr>
+    </table>
+<?php
+	}
+print "    <p><b>Status:</b> $msg[$i]</p>\n  </div>\n  <div class=\"line\"> </div>\n";
+	$i++;
+	}
+print "</div>\n";
+$time_difference = "0"; // BST: 1 GMT: 0
+$time_difference = ($time_difference * 60 * 60);
+$time = date("h:ia", time() + $time_difference);
+$date = date("jS F, Y", time() + 0);
+print "<div>\n  <div>\n    <p><b>Live SHOUTcast statistics:</b> $date, $time</p>\n  </div>\n</div>\n";
+?>
+<div>
+  <div>
+    <p class="small" style="float: left;"><a href="http://mixstream.net/" target="_blank">SHOUTcast statistics script</a>. <a href="http://validator.w3.org/check?uri=referer" target="_blank">Valid HTML 4.01 Transitional</a></p>
+    <p class="small" style="float: right;">&copy; MixStream.net 2006</p>
+  </div>
+</div>
+</body>
+</html>

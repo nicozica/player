@@ -177,4 +177,21 @@ while($i<=$servers)
 	}
 $total_listeners = array_sum($listeners) ;
 
+$i = "1";
+while($i<=$servers)
+	{
+  	  print "  <div>\n";
+if ($max[$i] > 0) 
+	{
+	$percentage = round(($listeners[$i] / $max[$i] * 100));
+	$timesby = (300 / $max[$i]);
+	$barlength = round(($listeners[$i] * "$timesby"));
+	}
+if ($error[$i] != "1") 
+	{
+
+$time_difference = "0"; // BST: 1 GMT: 0
+$time_difference = ($time_difference * 60 * 60);
+$time = date("h:ia", time() + $time_difference);
+$date = date("jS F, Y", time() + 0);
 ?>

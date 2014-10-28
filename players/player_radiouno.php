@@ -20,7 +20,7 @@
 			</ul>
 		</div>
 		<div class="listeners">
-			<p>Oyentes online <span>481</span></p>
+			<p>Oyentes online <span><?php echo $total_listeners ?></span></p>
 		</div>
 	</div>
 	<div id="rds_radiouno">
