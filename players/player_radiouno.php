@@ -6,7 +6,9 @@
 			?>
 		</div>
 		<div class="banner_onair">
-			<img src="assets/images/ban_rollingstones.jpg" />
+			
+				<img src="<?php echo $ban_programa ?>" />
+			
 		</div>
 	</div><!-- /.player-box -->
 	<div class="second-line">

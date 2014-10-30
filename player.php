@@ -5,6 +5,7 @@
     if ($player == null)          { $player = "player_radiouno"; }; 
 
     require_once "stats-radiounodigital.php";
+    require_once "minibanner-programas.php";
 
 ?>
 
