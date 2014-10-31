@@ -6,8 +6,8 @@
 			?>
 		</div>
 		<div class="banner_onair">
-			
-				<img src="<?php echo $ban_programa ?>" />
+
+				<img id="banner_onair" src="<?php echo $ban_programa ?>" />			
 			
 		</div>
 	</div><!-- /.player-box -->
@@ -22,7 +22,7 @@
 			</ul>
 		</div>
 		<div class="listeners">
-			<p>Oyentes online <span><?php echo $total_listeners ?></span></p>
+			<p>Oyentes online <span id="listeners_count"><?php echo $total_listeners ?></span></p>
 		</div>
 	</div>
 	<div id="rds_radiouno">

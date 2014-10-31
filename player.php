@@ -4,8 +4,8 @@
     
     if ($player == null)          { $player = "player_radiouno"; }; 
 
-    require_once "stats-radiounodigital.php";
-    require_once "minibanner-programas.php";
+    require_once "includes/stats.php";
+    require_once "includes/minibanner-programas.php";
 
 ?>
 
@@ -76,6 +76,9 @@
 
     $('#rds_tophits').load('players/rds/rds_tophits.php');
     $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
+
+    $('#listeners_count').load('includes/stats.php');
+    $('#banner_onair').load('includes/minibanner-programas.php');
 
     }, 30000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
 
