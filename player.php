@@ -107,7 +107,7 @@
 
             <!-- /*ROW 2 NEW*/ -->
             <div class="player-item">
-                <img src="assets/images/rotator-tmp/rotate-tmp.php" alt="Banner" width="271" height="255" />
+                <img src="assets/images/rotator/rotate.php" alt="Banner" width="271" height="255" />
                 <!-- <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" /> -->
             </div><!-- /.player-item -->
             <div class="player-item">
@@ -150,7 +150,7 @@
                 <?php include 'items/item_rockdeaca.php' ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
-                <img src="assets/images/rotator/rotate.php" alt="Banner" width="271" height="255" />
+                <img src="assets/images/rotator2/rotate2.php" alt="Banner" width="271" height="255" />
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
