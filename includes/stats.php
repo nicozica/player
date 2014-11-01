@@ -1,4 +1,5 @@
 <?php
+
 /*
 
 Live SHOUTcast statistics for multiple servers
@@ -177,5 +178,8 @@ while($i<=$servers)
 $total_listeners = array_sum($listeners) ;
 
 ?>
+
+<p>Oyentes online <span><?php echo $total_listeners ?></span></p>
+
 
 

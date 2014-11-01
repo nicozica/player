@@ -22,7 +22,9 @@
 			</ul>
 		</div>
 		<div class="listeners">
-			<p>Oyentes online <span id="listeners_count"><?php echo $total_listeners ?></span></p>
+			<div id="listeners_count">
+				<?php include 'includes/stats.php' ?>
+			</div>
 		</div>
 	</div>
 	<div id="rds_radiouno">
