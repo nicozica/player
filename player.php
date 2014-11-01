@@ -80,7 +80,7 @@
     $('#listeners_count').load('includes/stats.php');
     $('#banner_onair').load('includes/minibanner-programas.php');
 
-    }, 30000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
+    }, 3000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
 
     });
     // ]]></script>
