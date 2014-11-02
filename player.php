@@ -28,48 +28,66 @@
        $("#load-player").load('players/'+player+'.php');
     }
 
-    // <![CDATA[
-    $(document).ready(function() {
-    $.ajaxSetup({ cache: false }); // This part addresses an IE bug. without it, IE will only load the first number and will never refresh
-    setInterval(function() {
+    function refreshElements() {
+       //LOAD RDS ITEMS
+        $('#rds_item_acdc').load('items/rds/rds_item_acdc.php');
+        $('#rds_item_rollingstones').load('items/rds/rds_item_rollingstones.php');
+        $('#rds_item_thebeatles').load('items/rds/rds_item_thebeatles.php');
 
-    //LOAD RDS ITEMS
-    $('#rds_item_acdc').load('items/rds/rds_item_acdc.php');
-    $('#rds_item_rollingstones').load('items/rds/rds_item_rollingstones.php');
-    $('#rds_item_thebeatles').load('items/rds/rds_item_thebeatles.php');
+        $('#rds_item_u2').load('items/rds/rds_item_u2.php');
+        $('#rds_item_queen').load('items/rds/rds_item_queen.php');
+        $('#rds_item_redondos').load('items/rds/rds_item_redondos.php');
 
-    $('#rds_item_classicrock').load('items/rds/rds_item_classicrock.php');
-    $('#rds_item_reggae').load('items/rds/rds_item_reggae.php');
+        $('#rds_item_classicrock').load('items/rds/rds_item_classicrock.php');
+        $('#rds_item_reggae').load('items/rds/rds_item_reggae.php');
 
-    $('#rds_item_70s').load('items/rds/rds_item_70s.php');
-    $('#rds_item_80s').load('items/rds/rds_item_80s.php');
-    $('#rds_item_90s').load('items/rds/rds_item_90s.php');
+        $('#rds_item_70s').load('items/rds/rds_item_70s.php');
+        $('#rds_item_80s').load('items/rds/rds_item_80s.php');
+        $('#rds_item_90s').load('items/rds/rds_item_90s.php');
 
-    $('#rds_item_tophits').load('items/rds/rds_item_tophits.php');
-    $('#rds_item_rockdeaca').load('items/rds/rds_item_rockdeaca.php');
+        $('#rds_item_tophits').load('items/rds/rds_item_tophits.php');
+        $('#rds_item_rockdeaca').load('items/rds/rds_item_rockdeaca.php');
 
 
-    //LOAD RDS PLAYERS
-    $('#rds_radiouno').load('players/rds/rds_radiouno.php');
+        //LOAD RDS PLAYERS
+        $('#rds_radiouno').load('players/rds/rds_radiouno.php');
 
-    $('#rds_acdc').load('players/rds/rds_acdc.php');
-    $('#rds_rollingstones').load('players/rds/rds_rollingstones.php');
-    $('#rds_thebeatles').load('players/rds/rds_thebeatles.php');
+        $('#rds_acdc').load('players/rds/rds_acdc.php');
+        $('#rds_rollingstones').load('players/rds/rds_rollingstones.php');
+        $('#rds_thebeatles').load('players/rds/rds_thebeatles.php');
 
-    $('#rds_classicrock').load('players/rds/rds_classicrock.php');
-    $('#rds_reggae').load('players/rds/rds_reggae.php');
+        $('#rds_u2').load('players/rds/rds_u2.php');
+        $('#rds_queen').load('players/rds/rds_queen.php');
+        $('#rds_redondos').load('players/rds/rds_redondos.php');
 
-    $('#rds_70s').load('players/rds/rds_70s.php');
-    $('#rds_80s').load('players/rds/rds_80s.php');
-    $('#rds_90s').load('players/rds/rds_90s.php');
+        $('#rds_classicrock').load('players/rds/rds_classicrock.php');
+        $('#rds_reggae').load('players/rds/rds_reggae.php');
 
-    $('#rds_tophits').load('players/rds/rds_tophits.php');
-    $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
+        $('#rds_70s').load('players/rds/rds_70s.php');
+        $('#rds_80s').load('players/rds/rds_80s.php');
+        $('#rds_90s').load('players/rds/rds_90s.php');
 
-    }, 1000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
+        $('#rds_tophits').load('players/rds/rds_tophits.php');
+        $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
 
+        $('#listeners_count').load('includes/stats.php');
+        $('#banner_onair').load('includes/minibanner-programas.php');
+
+    };
+
+    //CALLS THE FUNCTION WHEN DOCUMENT READY
+    $(function() {
+        refreshElements();
     });
-    // ]]></script>
+
+    //REFRESHES EVERY 30 SEC
+    window.setInterval(function(){
+        refreshElements();
+    }, 30000);
+
+
+
+    </script>
 </head>
 
 <body>
@@ -91,13 +109,25 @@
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
-            <!-- /*ROW 2*/ -->
+            <!-- /*ROW 2 NEW*/ -->
             <div class="player-item">
-                <?php include 'items/item_classicrock.php' ?>
+                <img src="assets/images/rotator/rotate.php" alt="Banner" width="271" height="255" />
+                <!-- <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" /> -->
             </div><!-- /.player-item -->
             <div class="player-item">
-                <img src="assets/images/rotator-tmp/rotate-tmp.php" alt="Banner" width="271" height="255" />
-                <!-- <img src="assets/images/ban_mobile-app_271x208.jpg" alt="Descarga nuestra APP para iOS y Android" /> -->
+                <?php include 'items/item_u2.php' ?>
+            </div><!-- /.player-item -->     
+            <div class="player-item last">
+                <?php include 'items/item_redondos.php' ?>
+            </div><!-- /.player-item-last -->
+            <div class="clearfix"></div>
+
+            <!-- /*ROW 2*/ -->
+            <div class="player-item">
+                <?php include 'items/item_queen.php' ?>
+            </div><!-- /.player-item -->
+            <div class="player-item">
+                <?php include 'items/item_classicrock.php' ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
                 <?php include 'items/item_reggae.php' ?>
@@ -124,7 +154,7 @@
                 <?php include 'items/item_rockdeaca.php' ?>
             </div><!-- /.player-item -->
             <div class="player-item last">
-                <img src="assets/images/rotator/rotate.php" alt="Banner" width="271" height="255" />
+                <img src="assets/images/rotator2/rotate2.php" alt="Banner" width="271" height="255" />
             </div><!-- /.player-item-last -->
             <div class="clearfix"></div>
 
