@@ -5,11 +5,9 @@
 				include "muse/muse_radiouno.php";
 			?>
 		</div>
-		<div class="banner_onair">
+		<div id="banner_onair">
 
-				<img id="banner_onair" src="<?php echo $ban_programa ?>" />			
-			
-		</div>
+		</div><!-- /#banner_onair -->
 	</div><!-- /.player-box -->
 	<div class="second-line">
 		<div class="icon-players">
@@ -23,7 +21,7 @@
 		</div>
 		<div class="listeners">
 			<div id="listeners_count">
-				<?php include 'includes/stats.php' ?>
+				
 			</div>
 		</div>
 	</div>

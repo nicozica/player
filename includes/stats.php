@@ -21,7 +21,7 @@ Version: v1.1
 
 $station_name = "Radio UNO Digital";
 
-$timeout = "1"; // Number of seconds before connecton times out - a higher value will slow the page down if any servers are offline
+$timeout = "5"; // Number of seconds before connecton times out - a higher value will slow the page down if any servers are offline
 
 /* ----------- Server configuration ---------- */
 
@@ -179,7 +179,7 @@ $total_listeners = array_sum($listeners) ;
 
 ?>
 
-<p>Oyentes online <span><?php echo $total_listeners ?></span></p>
+<p style="word-spacing: 4px;">Oyentes online</span> <span style="word-spacing: 0;"><?php echo $total_listeners ?></span></p>
 
 
 

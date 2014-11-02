@@ -169,3 +169,4 @@ if ($today == "Mon") {
 
 
 ?>
+<img id="banner_onair" src="<?php echo $ban_programa ?>" />

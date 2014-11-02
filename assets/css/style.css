@@ -124,10 +124,10 @@ a.player-link {
   float: left;
 }
 
-.player-container.radiouno .player-box .banner_onair {
+.player-container.radiouno .player-box #banner_onair {
   width: 190px;
   height: 102px;
-  padding-top: 12px; 
+  padding-top: 6px; 
   float: right;
 }
 
@@ -157,8 +157,9 @@ a.player-link {
 }
 
 .player-container.radiouno .second-line .icon-players {
-  width: 258px;
+  width: 333px;
   float: left;
+  margin: 0 auto;
 }
 
 .player-container.radiouno .second-line p {

@@ -4,9 +4,6 @@
     
     if ($player == null)          { $player = "player_radiouno"; }; 
 
-    require_once "includes/stats.php";
-    require_once "includes/minibanner-programas.php";
-
 ?>
 
 
@@ -31,59 +28,103 @@
        $("#load-player").load('players/'+player+'.php');
     }
 
-    // <![CDATA[
     $(document).ready(function() {
-    $.ajaxSetup({ cache: false }); // This part addresses an IE bug. without it, IE will only load the first number and will never refresh
-    setInterval(function() {
 
-    //LOAD RDS ITEMS
-    $('#rds_item_acdc').load('items/rds/rds_item_acdc.php');
-    $('#rds_item_rollingstones').load('items/rds/rds_item_rollingstones.php');
-    $('#rds_item_thebeatles').load('items/rds/rds_item_thebeatles.php');
+       //LOAD RDS ITEMS
+        $('#rds_item_acdc').load('items/rds/rds_item_acdc.php');
+        $('#rds_item_rollingstones').load('items/rds/rds_item_rollingstones.php');
+        $('#rds_item_thebeatles').load('items/rds/rds_item_thebeatles.php');
 
-    $('#rds_item_u2').load('items/rds/rds_item_u2.php');
-    $('#rds_item_queen').load('items/rds/rds_item_queen.php');
-    $('#rds_item_redondos').load('items/rds/rds_item_redondos.php');
+        $('#rds_item_u2').load('items/rds/rds_item_u2.php');
+        $('#rds_item_queen').load('items/rds/rds_item_queen.php');
+        $('#rds_item_redondos').load('items/rds/rds_item_redondos.php');
 
-    $('#rds_item_classicrock').load('items/rds/rds_item_classicrock.php');
-    $('#rds_item_reggae').load('items/rds/rds_item_reggae.php');
+        $('#rds_item_classicrock').load('items/rds/rds_item_classicrock.php');
+        $('#rds_item_reggae').load('items/rds/rds_item_reggae.php');
 
-    $('#rds_item_70s').load('items/rds/rds_item_70s.php');
-    $('#rds_item_80s').load('items/rds/rds_item_80s.php');
-    $('#rds_item_90s').load('items/rds/rds_item_90s.php');
+        $('#rds_item_70s').load('items/rds/rds_item_70s.php');
+        $('#rds_item_80s').load('items/rds/rds_item_80s.php');
+        $('#rds_item_90s').load('items/rds/rds_item_90s.php');
 
-    $('#rds_item_tophits').load('items/rds/rds_item_tophits.php');
-    $('#rds_item_rockdeaca').load('items/rds/rds_item_rockdeaca.php');
+        $('#rds_item_tophits').load('items/rds/rds_item_tophits.php');
+        $('#rds_item_rockdeaca').load('items/rds/rds_item_rockdeaca.php');
 
 
-    //LOAD RDS PLAYERS
-    $('#rds_radiouno').load('players/rds/rds_radiouno.php');
+        //LOAD RDS PLAYERS
+        $('#rds_radiouno').load('players/rds/rds_radiouno.php');
 
-    $('#rds_acdc').load('players/rds/rds_acdc.php');
-    $('#rds_rollingstones').load('players/rds/rds_rollingstones.php');
-    $('#rds_thebeatles').load('players/rds/rds_thebeatles.php');
+        $('#rds_acdc').load('players/rds/rds_acdc.php');
+        $('#rds_rollingstones').load('players/rds/rds_rollingstones.php');
+        $('#rds_thebeatles').load('players/rds/rds_thebeatles.php');
 
-    $('#rds_u2').load('players/rds/rds_u2.php');
-    $('#rds_queen').load('players/rds/rds_queen.php');
-    $('#rds_redondos').load('players/rds/rds_redondos.php');
+        $('#rds_u2').load('players/rds/rds_u2.php');
+        $('#rds_queen').load('players/rds/rds_queen.php');
+        $('#rds_redondos').load('players/rds/rds_redondos.php');
 
-    $('#rds_classicrock').load('players/rds/rds_classicrock.php');
-    $('#rds_reggae').load('players/rds/rds_reggae.php');
+        $('#rds_classicrock').load('players/rds/rds_classicrock.php');
+        $('#rds_reggae').load('players/rds/rds_reggae.php');
 
-    $('#rds_70s').load('players/rds/rds_70s.php');
-    $('#rds_80s').load('players/rds/rds_80s.php');
-    $('#rds_90s').load('players/rds/rds_90s.php');
+        $('#rds_70s').load('players/rds/rds_70s.php');
+        $('#rds_80s').load('players/rds/rds_80s.php');
+        $('#rds_90s').load('players/rds/rds_90s.php');
 
-    $('#rds_tophits').load('players/rds/rds_tophits.php');
-    $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
+        $('#rds_tophits').load('players/rds/rds_tophits.php');
+        $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php');
 
-    $('#listeners_count').load('includes/stats.php');
-    $('#banner_onair').load('includes/minibanner-programas.php');
+        $('#listeners_count').load('includes/stats.php');
+        $('#banner_onair').load('includes/minibanner-programas.php');
 
-    }, 3000); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
+        //STARTS REFRESHERS
+       var refreshId = setInterval(function() {
+        //RELOAD RDS ITEMS
+        $("#rds_item_acdc").load('items/rds/rds_item_acdc.php?' + 1*new Date());
+        $('#rds_item_rollingstones').load('items/rds/rds_item_rollingstones.php' + 1*new Date());
+        $('#rds_item_thebeatles').load('items/rds/rds_item_thebeatles.php' + 1*new Date());
+
+        $('#rds_item_u2').load('items/rds/rds_item_u2.php' + 1*new Date());
+        $('#rds_item_queen').load('items/rds/rds_item_queen.php' + 1*new Date());
+        $('#rds_item_redondos').load('items/rds/rds_item_redondos.php' + 1*new Date());
+
+        $('#rds_item_classicrock').load('items/rds/rds_item_classicrock.php' + 1*new Date());
+        $('#rds_item_reggae').load('items/rds/rds_item_reggae.php' + 1*new Date());
+
+        $('#rds_item_70s').load('items/rds/rds_item_70s.php' + 1*new Date());
+        $('#rds_item_80s').load('items/rds/rds_item_80s.php' + 1*new Date());
+        $('#rds_item_90s').load('items/rds/rds_item_90s.php' + 1*new Date());
+
+        $('#rds_item_tophits').load('items/rds/rds_item_tophits.php' + 1*new Date());
+        $('#rds_item_rockdeaca').load('items/rds/rds_item_rockdeaca.php' + 1*new Date());
+
+
+        //RELOAD RDS PLAYERS
+        $('#rds_radiouno').load('players/rds/rds_radiouno.php' + 1*new Date());
+
+        $('#rds_acdc').load('players/rds/rds_acdc.php' + 1*new Date());
+        $('#rds_rollingstones').load('players/rds/rds_rollingstones.php' + 1*new Date());
+        $('#rds_thebeatles').load('players/rds/rds_thebeatles.php' + 1*new Date());
+
+        $('#rds_u2').load('players/rds/rds_u2.php' + 1*new Date());
+        $('#rds_queen').load('players/rds/rds_queen.php' + 1*new Date());
+        $('#rds_redondos').load('players/rds/rds_redondos.php' + 1*new Date());
+
+        $('#rds_classicrock').load('players/rds/rds_classicrock.php' + 1*new Date());
+        $('#rds_reggae').load('players/rds/rds_reggae.php' + 1*new Date());
+
+        $('#rds_70s').load('players/rds/rds_70s.php' + 1*new Date());
+        $('#rds_80s').load('players/rds/rds_80s.php' + 1*new Date());
+        $('#rds_90s').load('players/rds/rds_90s.php' + 1*new Date());
+
+        $('#rds_tophits').load('players/rds/rds_tophits.php' + 1*new Date());
+        $('#rds_rockdeaca').load('players/rds/rds_rockdeaca.php' + 1*new Date());
+
+        $('#listeners_count').load('includes/stats.php' + 1*new Date());
+        $('#banner_onair').load('includes/minibanner-programas.php' + 1*new Date());
+
+       }, 30000);
 
     });
-    // ]]></script>
+
+    </script>
 </head>
 
 <body>
